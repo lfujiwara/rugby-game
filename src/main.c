@@ -37,6 +37,7 @@ int main(int argc, char** argv) {
 
   Game game = choose_game(argc, argv);
   play_game(game, STANDARD_MAX_TURNS);
+
   delete_game(game);
 
   return EXIT_SUCCESS;
