@@ -79,6 +79,9 @@ Game new_game(
       execute_attacker_strategy,
       execute_defender_strategy);
 
+  game->attacker_spy = new_spy(game->attacker);
+  game->defender_spy = new_spy(game->defender);
+
   set_attacker_in_field(game->field, game->attacker);
   set_defender_in_field(game->field, game->defender);
   set_obstacles_in_field(game->field, game->obstacle);
