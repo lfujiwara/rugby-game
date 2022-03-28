@@ -28,9 +28,8 @@ direction_t execute_defender_strategy(position_t defender_position,
 
   UNUSED(defender_position);
   UNUSED(attacker_spy);
-
-  // TODO: Implement Defender logic here
-  return (direction_t)DIR_LEFT;
+  srand(time(NULL));
+  return DIRS_DEF[rand() % DIRS_DEF_LEN];
 }
 
 /*----------------------------------------------------------------------------*/
